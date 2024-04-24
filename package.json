@@ -5,7 +5,7 @@
   "homepage": "https://YelyzavetaRozhdiestvenska.github.io/Sudoku-js",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /Sudoku-js/"
   },
   "repository": {
     "type": "git",
