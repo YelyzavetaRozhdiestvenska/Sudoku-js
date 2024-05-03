@@ -54,6 +54,24 @@ h1 {
   margin-bottom: 0.5vmin;
 }
 
+.cell.filled {
+  background-color: #d9d9d9;
+  color: #222222;
+}
+
+.cell.highlighted {
+  background-color: #fff3e5;
+}
+
+.cell.selected {
+  background-color: #ffdbb3;
+}
+
+.cell.error {
+  background-color: #ff8c8c;
+  color: #ffffff;
+}
+
 .numbers {
   display: grid;
   grid-template-columns: repeat(5, auto);
@@ -72,4 +90,32 @@ h1 {
   font-size: 3vmin;
   color: #222222;
   cursor: pointer;
+}
+
+.zoom {
+  animation: zoom 0.5s ease-in-out;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.2);
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1.2);
+  }
+
+  25% {
+    transform: scale(1.2) rotate(30deg);
+  }
+
+  50% {
+    transform: scale(1.2) rotate(-30deg);
+  }
 }

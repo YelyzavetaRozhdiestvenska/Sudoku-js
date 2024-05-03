@@ -101,6 +101,7 @@ function validateBox(grid, row, column, value) {
 }
 
 function removeCells(grid) {
+  // количество заполняемых ячеек
   const DIFFICULTY = 30;
   const resultGrid = [...grid].map(row => [...row]);
 
